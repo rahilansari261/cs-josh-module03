@@ -1,7 +1,8 @@
 import './App.css'
 // import { Quote } from './Quote'
 // import { FrequentlyAskedQuestion } from './Faq'
-import { LoginForm } from './Login'
+// import { LoginForm } from './Login'
+import {ContactCard} from './Card'
 
 function App() {
   return (
@@ -17,11 +18,16 @@ function App() {
     //   answer='Cool Styling Strategy'
     // />
 
-    <LoginForm
-      handleSubmit={(ev) => {
-        ev.preventDefault()
-        alert('Submitted!')
-      }}
+    // <LoginForm
+    //   handleSubmit={(ev) => {
+    //     ev.preventDefault()
+    //     alert('Submitted!')
+    //   }}
+    // />
+    <ContactCard
+      avatarSrc=''
+      name='Mittens'
+      email='meow@gmail.com'
     />
   )
 }
