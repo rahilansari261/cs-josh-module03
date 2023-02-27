@@ -1,17 +1,18 @@
-import React from "react";
+import React from 'react'
 import styled from 'styled-components'
 
 export function ContactCard({ avatarSrc, name, email }) {
   return (
-    <Wrapper >
-      <Avatar alt='' src={avatarSrc}  />
+    <Wrapper>
+      <Avatar alt='' src={avatarSrc} />
       <Name>{name}</Name>
       <Email>{email}</Email>
     </Wrapper>
   )
 }
 const Wrapper = styled.article`
-  min-width: 250px;
+  width: 250px;
+  margin:100px auto;
   border-radius: 32px;
   padding: 24px;
   background: white;

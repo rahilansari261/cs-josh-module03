@@ -1,10 +1,11 @@
 import './App.css'
-import GlobalStyles from '../GlobalStyles'
+import GlobalStyles from './GlobalStyles'
 // import { Quote } from './Quote'
 // import { FrequentlyAskedQuestion } from './Faq'
 // import { LoginForm } from './Login'
 import { ContactCard } from './Card'
-import cat from '../assets/cat.jpg'
+import cat from './assets/cat.jpg'
+import { WallArt } from './WallArt'
 
 function App() {
   return (
@@ -26,7 +27,16 @@ function App() {
     //     alert('Submitted!')
     //   }}
     // />
-    <ContactCard avatarSrc={cat} name='Mittens' email='meow@gmail.com' />
+    // <ContactCard avatarSrc={cat} name='Mittens' email='meow@gmail.com' />
+    <>
+      <WallArt
+        src='/course-materials/wall-art.jpg'
+        alt='A hallway with rainbow-coloured lights'
+        caption='Photo by Efe Kurnaz'
+        width={250}
+      />
+      <GlobalStyles />
+    </>
   )
 }
 
