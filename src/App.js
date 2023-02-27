@@ -1,8 +1,10 @@
 import './App.css'
+import GlobalStyles from '../GlobalStyles'
 // import { Quote } from './Quote'
 // import { FrequentlyAskedQuestion } from './Faq'
 // import { LoginForm } from './Login'
-import {ContactCard} from './Card'
+import { ContactCard } from './Card'
+import cat from '../assets/cat.jpg'
 
 function App() {
   return (
@@ -24,11 +26,7 @@ function App() {
     //     alert('Submitted!')
     //   }}
     // />
-    <ContactCard
-      avatarSrc=''
-      name='Mittens'
-      email='meow@gmail.com'
-    />
+    <ContactCard avatarSrc={cat} name='Mittens' email='meow@gmail.com' />
   )
 }
 
