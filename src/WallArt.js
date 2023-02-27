@@ -21,7 +21,12 @@ export function WallArt({ src, alt, caption, width }) {
 
 const Wrapper = styled.div`
   padding: 8px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height:375px;
   isolation: isolate;
   background: white;
   box-shadow: 0 2.7px 1.9px -2px rgba(0, 0, 0, 0.028),
@@ -31,7 +36,7 @@ const Wrapper = styled.div`
     0 -15px 40px -20px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   width: 250px;
-  margin : 150px auto;
+  margin: auto;
 `
 const Photo = styled.img`
   display: block;
