@@ -5,8 +5,9 @@ import GlobalStyles from './GlobalStyles'
 // import { LoginForm } from './Login'
 // import { ContactCard } from './Card'
 // import cat from './assets/cat.jpg'
-import hall from './assets/hall.jpg'
-import { WallArt } from './WallArt'
+// import hall from './assets/hall.jpg'
+// import { WallArt } from './WallArt'
+import { ButtonGroup } from './IconButton'
 
 function App() {
   return (
@@ -29,13 +30,14 @@ function App() {
     //   }}
     // />
     // <ContactCard avatarSrc={cat} name='Mittens' email='meow@gmail.com' />
+    // <WallArt
+    //   src={hall}
+    //   alt='A hallway with rainbow-coloured lights'
+    //   caption='Photo by Efe Kurnaz'
+    //   width={250}
+    // />
     <>
-      <WallArt
-        src={hall}
-        alt='A hallway with rainbow-coloured lights'
-        caption='Photo by Efe Kurnaz'
-        width={250}
-      />
+      <ButtonGroup />
       <GlobalStyles />
     </>
   )
