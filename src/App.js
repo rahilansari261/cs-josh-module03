@@ -7,7 +7,8 @@ import GlobalStyles from './GlobalStyles'
 // import cat from './assets/cat.jpg'
 // import hall from './assets/hall.jpg'
 // import { WallArt } from './WallArt'
-import { ButtonGroup } from './IconButton'
+// import { ButtonGroup } from './IconButton'
+import { Breadcrumbs, Crumb } from './BreadCrumb'
 
 function App() {
   return (
@@ -36,8 +37,16 @@ function App() {
     //   caption='Photo by Efe Kurnaz'
     //   width={250}
     // />
+    // <ButtonGroup />
     <>
-      <ButtonGroup />
+      <Breadcrumbs>
+        <Crumb href='/'>Home</Crumb>
+        <Crumb href='/living'>Living Room</Crumb>
+        <Crumb href='/living/couch'>Couches</Crumb>
+        <Crumb href='/living/couch/sectional' isCurrentPage={true}>
+          Sectionals
+        </Crumb>
+      </Breadcrumbs>
       <GlobalStyles />
     </>
   )
