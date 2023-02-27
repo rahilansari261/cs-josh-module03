@@ -5,6 +5,7 @@ import GlobalStyles from './GlobalStyles'
 // import { LoginForm } from './Login'
 import { ContactCard } from './Card'
 import cat from './assets/cat.jpg'
+import hall from './assets/hall.jpg'
 import { WallArt } from './WallArt'
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
     // <ContactCard avatarSrc={cat} name='Mittens' email='meow@gmail.com' />
     <>
       <WallArt
-        src='/course-materials/wall-art.jpg'
+        src={hall}
         alt='A hallway with rainbow-coloured lights'
         caption='Photo by Efe Kurnaz'
         width={250}
